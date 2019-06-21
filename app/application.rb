@@ -7,3 +7,6 @@ class Application
     
     if current_time.hour < 
       binding.pry
+    end
+  end
+end
