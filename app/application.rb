@@ -5,8 +5,10 @@ class Application
     resp = Rack::Response.new
     current_time = Time.now
     
-    if current_time.hour < 
-      binding.pry
+    if current_time.hour.to_i < 12
+      resp.write "Good Morning!"
+    else
+      resp.write "Good Afternoon!"
     end
   end
 end
