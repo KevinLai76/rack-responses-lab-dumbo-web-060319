@@ -1,3 +1,4 @@
+require 'pry'
 class Application
   
   def call(env)
@@ -5,3 +6,4 @@ class Application
     current_time = Time.now
     
     if current_time.hour < 
+      binding.pry
