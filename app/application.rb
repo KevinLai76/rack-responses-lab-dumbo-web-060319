@@ -4,4 +4,4 @@ class Application
     resp = Rack::Response.new
     current_time = Time.now
     
-    if current_time.hours < 
+    if current_time.hour < 
